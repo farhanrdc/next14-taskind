@@ -74,7 +74,7 @@ export const CardForm = forwardRef<HTMLTextAreaElement, CardFormProps>(({
         <form
           ref={formRef}
           action={onSubmit}
-          className="m-1 py-0.5 px-1 space-y-4 relative"
+          className="m-1 py-0.5 px-1 space-y-4 relative dark:text-neutral-100"
         >
             <FormTextarea
                 id="title"
@@ -82,12 +82,14 @@ export const CardForm = forwardRef<HTMLTextAreaElement, CardFormProps>(({
                 ref={ref}
                 placeholder="New line? klik Shift + Enter"
                 errors={fieldErrors}
+                
             />
             <input
                 hidden
                 id="listId"
                 name="listId"
                 value={listId}
+                className="dark:text-neutral-100"
             />
             <div className="flex items-center gap-x-1">
                 <FormSubmit>
