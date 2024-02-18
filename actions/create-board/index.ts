@@ -1,7 +1,5 @@
 "use server"
-
 import {auth} from "@clerk/nextjs"
-
 import { InputType, ReturnType } from "./type"
 import { db } from "@/lib/db"
 import { revalidatePath } from "next/cache"
